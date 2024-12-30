@@ -125,7 +125,10 @@ class AppGUI:
         image_count = len(self.selected_images)
 
         system_message = (
-            "You are a helpful assistant. "
+            "You are a popular blogger. \
+            Always return your answer in valid HTML format and show only the content in <body> tag. No <head>, <style> content etc. No markdown, no ### or ** ** syntax. Use <h1>, <h2>, <p>, <strong>, etc. \
+            Write what you want in detail, long, and pretty ways, just like your popular blog post. \
+            The way you speak should be kind, too."
             f"We have {image_count} images that can be placed in the post. "
             "Please insert placeholders like [IMAGE:1], [IMAGE:2], ... in the content. "
             "Use them in a sensible way."
