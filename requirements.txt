@@ -1,0 +1,9 @@
+# python 3.9.20
+
+openai==1.58.1
+requests==2.32.2
+python-dotenv==1.0.1
+tk==0.1.0
+python-wordpress-xmlrpc==2.3
+datetime==5.5
+pytz==2024.2
