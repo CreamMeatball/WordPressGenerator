@@ -100,12 +100,14 @@ my_wordpress_automation/
    > - datetime==5.5
    > - pytz==2024.2
    > - 등등
-3. **.env 또는 config.py 설정**  
-   - **OpenAI API 키**: `OPENAI_API_KEY=sk-...`  
-   - **WordPress**:  
+3. **.env 설정**   
+   - **.env 파일 생성**:
+     - 프로젝트 루트 디렉토리에 '.env' 파일 생성
+   - **.env 내용 양식**:  
+     - `OPENAI_API_KEY=sk-...`
      - `WORDPRESS_SITE_URL=https://<내블로그>.wordpress.com/xmlrpc.php`  
-     - `WORDPRESS_USERNAME=<내 워드프레스닷컴 계정(이메일)>`  
-     - `WORDPRESS_PASSWORD=<워드프레스닷컴 앱 비밀번호>`  
+     - `WORDPRESS_USERNAME=<내 워드프레스 계정(이메일)>`  
+     - `WORDPRESS_PASSWORD=<워드프레스 비밀번호>`  
 4. **프로그램 실행**  
    ```bash
    python main.py
