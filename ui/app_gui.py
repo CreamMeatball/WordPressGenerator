@@ -86,7 +86,7 @@ class AppGUI:
         generate_button = ttk.Button(button_frame, text="ChatGPT 글 생성", command=self.generate_post)
         generate_button.pack(side=tk.LEFT, padx=5)
 
-        publish_button = ttk.Button(button_frame, text="WordPress 업로드", command=self.publish_post)
+        publish_button = ttk.Button(button_frame, text="WordPress 임시글 업로드", command=self.publish_post)
         publish_button.pack(side=tk.LEFT, padx=5)
 
     # ---------------------------------------------------------
@@ -186,10 +186,10 @@ class AppGUI:
             content=content,
             categories=categories,
             tags=tags,
-            status="publish"
+            status="draft"
         )
 
         if post_id:
-            messagebox.showinfo("성공", f"게시글 업로드 완료! (Post ID: {post_id})")
+            messagebox.showinfo("성공", f"임시글 업로드 완료! (Post ID: {post_id})")
         else:
             messagebox.showerror("에러", "게시글 업로드에 실패했습니다.")

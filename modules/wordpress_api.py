@@ -61,7 +61,7 @@ class WordPressClient:
 
         return urls
 
-    def create_post(self, title, content, categories=None, tags=None, status="publish"):
+    def create_post(self, title, content, categories=None, tags=None, status="draft"):
         if categories is None:
             categories = []
         if tags is None:
