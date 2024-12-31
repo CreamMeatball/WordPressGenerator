@@ -104,10 +104,12 @@ my_wordpress_automation/
    - **.env 파일 생성**:
      - 프로젝트 루트 디렉토리에 '.env' 파일 생성
    - **.env 내용 양식**:  
-     - `OPENAI_API_KEY=sk-...`
-     - `WORDPRESS_SITE_URL=https://<내블로그>.wordpress.com/xmlrpc.php`  
-     - `WORDPRESS_USERNAME=<내 워드프레스 계정(이메일)>`  
-     - `WORDPRESS_PASSWORD=<워드프레스 비밀번호>`  
+      ```
+      OPENAI_API_KEY=sk-...
+      WORDPRESS_SITE_URL=https://블로그 도메인(example.com)/xmlrpc.php
+      WORDPRESS_USERNAME=<내 워드프레스 계정(이메일)>
+      WORDPRESS_PASSWORD=<워드프레스 비밀번호>
+      ```
 4. **프로그램 실행**  
    ```bash
    python main.py
